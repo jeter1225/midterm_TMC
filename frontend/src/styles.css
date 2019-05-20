@@ -1,0 +1,297 @@
+.headerstyle {
+  color: #2b2d42;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 2;
+  width: 30vw;
+  text-align: center;
+  padding: 8px;
+}
+.flexContent {
+  background: #8d99ae;
+  display: flex;
+  align-content: center;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+.headerButton {
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.listWrapper {
+  width: 40vw;
+  position: relative;
+  top: 5vh;
+  left: 30vw;
+  right: 30vw;
+}
+.courseWrapper {
+  width: 40vw;
+  position: relative;
+  top: 5vh;
+  left: 30vw;
+  right: 30vw;
+}
+
+html {
+  font-size: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  touch-action: manipulation;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  color: #333;
+}
+
+/* .bg {
+  z-index: 1;
+  color: red;
+} */
+.bg {
+  background: url("./components/img/11088274_1.png") right top no-repeat;
+  position: relative;
+  height: 100vh;
+}
+.bg::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.homepageContent {
+  position: relative;
+}
+.logo {
+  margin: 20px 20px 0px;
+  width: 500px;
+  height: 500px;
+}
+
+.information > li {
+  position: relative;
+  top: -8vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  display: block;
+  margin: 0px 10% 0px;
+}
+
+.aimWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.aimItem {
+  margin: 30px;
+  margin-top: 15vh;
+}
+.infoItem {
+  margin: 30px;
+  margin-top: 5vh;
+}
+
+.printImg {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+}
+.paperStyle {
+  position: relative;
+  left: -10vw;
+  width: 50vw;
+}
+.paperStyle1 {
+  position: relative;
+  left: -5vw;
+  width: 50vw;
+}
+.typoTitle {
+  font-family: "Poppins", cursive;
+  color: #2b2d42;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 2;
+  width: 30vw;
+  padding: 30px;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+.typoDetail {
+  font-family: "Poppins", cursive;
+  color: #2b2d42;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 2;
+  width: 40vw;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+.posterImg {
+  height: 514px;
+  width: 365px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+}
+.buttonDeco {
+  padding-bottom: 30px;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+.buttonIcon {
+  margin-left: 10px;
+}
+.radioDeco {
+  margin-top: 20px;
+}
+
+.iconDeco {
+  position: relative;
+  bottom: -7px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+span,
+li,
+img,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  font-weight: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", cursive;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.05em;
+  font-weight: 400;
+  color: #777;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1;
+}
+h2 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+a:focus,
+a:active,
+a:hover,
+button:active,
+a b.light-color:hover {
+  text-decoration: none;
+}
+/*
+a:focus, a:active, a:hover, button:active,
+a b.light-color:hover{ text-decoration: none; color: #FFA804; }
+*/
+
+b {
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  line-height: inherit;
+}
+
+b.max-bold {
+  font-weight: 700;
+}
