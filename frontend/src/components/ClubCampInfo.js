@@ -81,9 +81,27 @@ class ClubCampInfo extends Component {
   handleClickOpen = () => {
     this.setState({ open: true });
   };
-
-  handleClose = () => {
-    this.setState({ open: false });
+  handleClose1 = () => {
+    this.setState({
+      open: false,
+      value: "",
+      name: "",
+      phone: "",
+      personid: "",
+      birth: "",
+      school: ""
+    });
+  };
+  handleClose2 = () => {
+    this.setState({
+      open: false,
+      value: "",
+      name: "",
+      phone: "",
+      personid: "",
+      birth: "",
+      school: ""
+    });
     this.postDataToDB();
   };
 
@@ -206,11 +224,11 @@ class ClubCampInfo extends Component {
                 </FormControl>
               </DialogContent>
               <DialogActions>
-                <Button onClick={this.handleClose} color="primary">
+                <Button onClick={this.handleClose1} color="primary">
                   取消
                 </Button>
                 <Button
-                  onClick={this.handleClose}
+                  onClick={this.handleClose2}
                   color="primary"
                   disabled={this.state.disabled}
                 >
